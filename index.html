@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eine moderne Website.">
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="#" aria-label="Zur Startseite">Meine Website</a>
+
+        <nav aria-label="Hauptnavigation">
+          <ul class="navigation">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="start">
+        <div class="container">
+          <p class="eyebrow">Willkommen</p>
+          <h1>Eine solide Basis für deine neue Website</h1>
+          <p>
+            Passe Texte, Farben und Inhalte an dein Projekt an und entwickle diese
+            Grundstruktur Schritt für Schritt weiter.
+          </p>
+          <a class="button" href="#ueber-uns">Mehr erfahren</a>
+        </div>
+      </section>
+
+      <section class="content-section" id="ueber-uns">
+        <div class="container">
+          <h2>Über uns</h2>
+          <p>
+            Hier ist Platz für eine kurze Vorstellung, dein Angebot oder die
+            wichtigsten Informationen zu deinem Projekt.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section content-section--muted" id="kontakt">
+        <div class="container">
+          <h2>Kontakt</h2>
+          <p>
+            Du erreichst uns per E-Mail unter
+            <a href="mailto:info@beispiel.de">info@beispiel.de</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Meine Website</p>
+      </div>
+    </footer>
+  </body>
+</html>
