@@ -3,20 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eine moderne Website.">
-    <title>Meine Website</title>
+    <meta name="description" content="Persönliche Website von Bernhard Witzeling – Kommunikation, Marketing und neue Ideen.">
+    <title>Bernhard Witzeling | Persönliche Website</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <a class="logo" href="#" aria-label="Zur Startseite">Meine Website</a>
-
+      <div class="container header-inner">
+        <a class="logo" href="#start" aria-label="Zur Startseite">Bernhard Witzeling</a>
         <nav aria-label="Hauptnavigation">
           <ul class="navigation">
-            <li><a href="#start">Start</a></li>
-            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#ueber-mich">Über mich</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -25,41 +23,78 @@
 
     <main>
       <section class="hero" id="start">
-        <div class="container">
-          <p class="eyebrow">Willkommen</p>
-          <h1>Eine solide Basis für deine neue Website</h1>
-          <p>
-            Passe Texte, Farben und Inhalte an dein Projekt an und entwickle diese
-            Grundstruktur Schritt für Schritt weiter.
-          </p>
-          <a class="button" href="#ueber-uns">Mehr erfahren</a>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hallo, ich bin Bernhard.</p>
+            <h1>Kommunikation beginnt mit echtem Interesse.</h1>
+            <p class="intro">
+              Ich beschäftige mich mit Kommunikation, Marketing und der Frage,
+              wie aus guten Ideen klare Botschaften und wirksame Projekte werden.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#kontakt">Kontakt aufnehmen</a>
+              <a class="text-link" href="#ueber-mich">Mehr über mich <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+
+          <div class="portrait-card" aria-label="Platzhalter für ein persönliches Foto">
+            <div class="portrait-placeholder">
+              <span>BW</span>
+            </div>
+            <p>Hier kann später dein persönliches Foto eingefügt werden.</p>
+          </div>
         </div>
       </section>
 
-      <section class="content-section" id="ueber-uns">
-        <div class="container">
-          <h2>Über uns</h2>
-          <p>
-            Hier ist Platz für eine kurze Vorstellung, dein Angebot oder die
-            wichtigsten Informationen zu deinem Projekt.
-          </p>
+      <section class="content-section" id="ueber-mich">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Über mich</p>
+            <h2>Strategisch denken. Verständlich kommunizieren.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              Beruflich bewege ich mich an der Schnittstelle von Unternehmenskommunikation,
+              Marketing und Bildung. Mich interessieren neue Technologien ebenso wie die
+              Menschen, für die Kommunikation gemacht wird.
+            </p>
+            <p>
+              Ich mag klare Konzepte, pragmatische Lösungen und Projekte, die nicht nur gut
+              aussehen, sondern auch einen echten Nutzen schaffen. Besonders spannend finde
+              ich die Möglichkeiten, die künstliche Intelligenz für Kommunikation und
+              kreative Arbeit eröffnet.
+            </p>
+            <div class="value-list" aria-label="Thematische Schwerpunkte">
+              <span>Kommunikation</span>
+              <span>Marketing</span>
+              <span>Digitale Projekte</span>
+              <span>Künstliche Intelligenz</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="content-section content-section--muted" id="kontakt">
-        <div class="container">
-          <h2>Kontakt</h2>
-          <p>
-            Du erreichst uns per E-Mail unter
-            <a href="mailto:info@beispiel.de">info@beispiel.de</a>.
-          </p>
+      <section class="contact-section" id="kontakt">
+        <div class="container contact-card">
+          <div>
+            <p class="eyebrow">Kontakt</p>
+            <h2>Lass uns ins Gespräch kommen.</h2>
+            <p>
+              Für Austausch, Ideen oder gemeinsame Projekte freue ich mich über eine Nachricht.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button--light" href="mailto:DEINE-EMAIL@BEISPIEL.AT">E-Mail schreiben</a>
+            <p class="placeholder-note">Bitte die Platzhalter-E-Mail im HTML ersetzen.</p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; <span id="current-year"></span> Meine Website</p>
+      <div class="container footer-inner">
+        <p>© <span id="current-year"></span> Bernhard Witzeling</p>
+        <a href="#start">Nach oben ↑</a>
       </div>
     </footer>
   </body>
